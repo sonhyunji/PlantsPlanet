@@ -20,6 +20,7 @@
             <th>제목</th>
         </tr>
         </thead>
+        <hr>
         <tbody>
         <tr>
         <tr th:each="board : ${list}">
@@ -29,6 +30,7 @@
         </tr>
         </tbody>
     </table>
+    <hr>
         <th:block th:each="page : ${#numbers.sequence(startPage, endPage)}">
         <a th:if="${page != nowPage}" th:href="@{/board/list(page = ${page - 1}, searchKeyword = ${param.searchKeyword})}" th:text="${page}"></a>
         <strong  th:if="${page == nowPage}" th:text="${page}" style="color : red"></strong>

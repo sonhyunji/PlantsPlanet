@@ -15,13 +15,13 @@
 <div class="layout">
     <form action="/board/writedo" method="post" enctype="multipart/form-data">
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Name</label>
-            <input type="text" name="title" id="exampleFormControlInput1" placeholder="Your Name">
+            <label for="exampleFormControlInput1" class="form-label">제목</label>
+            <input type="text" name="title" id="exampleFormControlInput1" placeholder="게시글 제목">
         </div>
         <br>
         <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label><br>
-            <textarea id="exampleFormControlTextarea1" name="content" rows="5">Write Something</textarea>
+            <label for="exampleFormControlTextarea1" class="form-label">내용</label><br>
+            <textarea id="exampleFormControlTextarea1" name="content" rows="5">게시글 내용</textarea>
         </div>
         <input type="file" name="file">
         <button type="submit">작성</button>

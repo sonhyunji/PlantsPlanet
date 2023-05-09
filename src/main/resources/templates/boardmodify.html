@@ -15,13 +15,13 @@
 <div class="layout">
   <form th:action="@{/board/update/{id}(id = ${board.id})}" method="post">
     <div class="mb-3">
-      <label for="exampleFormControllInput1" class="form-label">Name</label>
-      <input type="text" name="title" id="exampleFormControllInput1" th:value="${board.title}">(수정됨)
+      <label for="exampleFormControllInput1" class="form-label">제목</label>
+      <input type="text" name="title" id="exampleFormControllInput1" th:value="${board.title}">
     </div>
     <br>
     <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Exampletextarea</label>
-      <textarea id="exampleFormControlTextarea1" name="content" rows="5" th:text="${board.content}">(수정됨)</textarea>
+      <label for="exampleFormControlTextarea1" class="form-label">내용</label>
+      <textarea id="exampleFormControlTextarea1" name="content" rows="5" th:text="${board.content}"></textarea>
     </div>
     <button type="submit">수정</button>
   </form>
